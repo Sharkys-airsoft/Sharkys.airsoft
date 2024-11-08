@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vente de Projet Arduino R&D et Domination</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <h1>SHARKYS - Le Jeu Arduino Domination & R&D</h1>
+        <p>Transformez chaque partie en expérience inoubliable avec SHARKYS, un projet Arduino unique !</p>
+    </header>
+
+    <!-- Section d'accueil -->
+    <section id="accueil">
+        <h2>Présentation du Projet</h2>
+        <p>Notre jeu SHARKYS offre une expérience immersive avec deux modes de jeu, un affichage LED intuitif, et un suivi en temps réel des scores ! Idéal pour les amateurs de jeux d'extérieur et les passionnés d'Arduino.</p>
+    </section>
+
+    <!-- Section caractéristiques -->
+    <section id="caracteristiques">
+        <h2>Caractéristiques Principales</h2>
+        <ul>
+            <li>Deux modes de jeu : Domination et Recherche & Destruction</li>
+            <li>Écran LCD pour le suivi en temps réel</li>
+            <li>Effets lumineux NeoPixel pour chaque action</li>
+            <li>Interface de contrôle simple via encodeur et boutons</li>
+            <li>Personnalisation des scores et des durées de partie</li>
+        </ul>
+    </section>
+
+    <!-- Section vidéo démo -->
+    <section id="demo">
+        <h2>Démo Vidéo</h2>
+        <video width="100%" controls>
+            <source src="demo-video.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture vidéo.
+        </video>
+    </section>
+
+    <!-- Section achat -->
+    <section id="acheter">
+        <h2>Commandez le Projet SHARKYS</h2>
+        <p>Prix : 150€</p>
+        <button onclick="acheter()">Acheter Maintenant</button>
+    </section>
+
+    <!-- Section contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Des questions ? Besoin d'aide ? Envoyez-nous un message !</p>
+        <form id="contactForm">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
