@@ -39,3 +39,20 @@ nav a:hover {
     color: #555;
     text-align: justify;
 }
+
+.game-mode {
+    margin-bottom: 30px;
+}
+
+.image-gallery {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.image-gallery img {
+    width: 48%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
