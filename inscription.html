@@ -3,62 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscription Partie Airsoft - 30/11/2024</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Inscription à la Partie d'Airsoft</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Vérifiez le chemin ici -->
 </head>
 <body>
-
     <header>
-        <h1>Inscription pour la Partie d'Airsoft - 30 Novembre 2024</h1>
-        <nav>
-            <a href="index.html">Accueil</a> |
-            <a href="modes-de-jeux.html">Modes de Jeux</a> |
-            <a href="accessoires.html">Accessoires</a> |
-            <a href="photos.html">Photos</a> |
-            <a href="evenements.html">Événements</a> |
-            <a href="inscription.html">Inscription</a>
-        </nav>
+        <h1>Inscription pour la partie d'Airsoft - 30/11/2024</h1>
     </header>
-
     <main>
-        <section>
-            <p>Merci de remplir ce formulaire pour vous inscrire à notre partie d'airsoft qui aura lieu le 30 novembre 2024. Veuillez fournir vos informations et indiquer si vous souhaitez louer une réplique pour 30€ supplémentaires.</p>
-        </section>
+        <form action="submit_inscription.php" method="POST">
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required><br>
 
-        <section>
-            <form action="submit_inscription.php" method="POST">
-                <!-- Champ pour le prénom -->
-                <div class="form-group">
-                    <label for="prenom">Prénom:</label>
-                    <input type="text" id="prenom" name="prenom" required>
-                </div>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required><br>
 
-                <!-- Champ pour le nom -->
-                <div class="form-group">
-                    <label for="nom">Nom:</label>
-                    <input type="text" id="nom" name="nom" required>
-                </div>
+            <label for="location">Location de réplique (30€) :</label>
+            <select id="location" name="location">
+                <option value="Oui">Oui</option>
+                <option value="Non">Non</option>
+            </select><br>
 
-                <!-- Option de location de réplique -->
-                <div class="form-group">
-                    <label for="location">Souhaitez-vous louer une réplique ? (30€)</label>
-                    <select id="location" name="location" required>
-                        <option value="non">Non</option>
-                        <option value="oui">Oui</option>
-                    </select>
-                </div>
-
-                <!-- Bouton de soumission -->
-                <div class="form-group">
-                    <button type="submit">S'inscrire</button>
-                </div>
-            </form>
-        </section>
+            <button type="submit">S'inscrire</button>
+        </form>
     </main>
-
-    <footer>
-        <p>&copy; 2024 Airsoft - Tous droits réservés</p>
-    </footer>
-
 </body>
 </html>
